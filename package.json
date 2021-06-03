@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "localbase": "^0.7.5",
     "next": "10.2.3",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
