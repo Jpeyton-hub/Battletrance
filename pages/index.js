@@ -4,8 +4,8 @@ import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <Layout>
-      
+    <Layout home>
+      <h1>hello World from home</h1>
     </Layout>
   )
 }

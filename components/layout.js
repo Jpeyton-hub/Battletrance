@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Footer from './footer'
+import Header from './header'
 
 const Layout = ({children}) => {
     return (
@@ -12,10 +13,8 @@ const Layout = ({children}) => {
                 />
                 <title>BattleTrance</title>
             </Head>
-            <header>
-                
-            </header>
-            <main>{children}</main>
+            <Header />
+            <main className=''>{children}</main>
             <Footer />
         </div>
     )
