@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-const Layout = ({children, home, dash, entry}) => {
+const Layout = ({children}) => {
     return (
-        <div>
+        <div className='container'>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -12,7 +12,7 @@ const Layout = ({children, home, dash, entry}) => {
                 <title>BattleTrance</title>
             </Head>
             <header>
-                {home ? (<></>) : dash ? (<></>) : entry ? (<></>) : (<></>)}
+                
             </header>
             <main>{children}</main>
         </div>
