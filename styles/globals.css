@@ -3,7 +3,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+  background-color: rgb(41, 40, 40);
 }
 
 a {
@@ -18,8 +19,26 @@ a {
 nav {
   background-color: rgb(47, 48, 61);
   color: white;
-  border-bottom: 1px yellow solid;
+  border-bottom: 1px rgb(209, 85, 3) solid;
+}
+
+.nav-link {
+  transition: .3s;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  letter-spacing: 2px;
+  background-color: rgb(117, 19, 2);
 }
 
 main {
+  color: white;
+}
+
+footer {
+  background-color: rgb(47, 48, 61);
+  color: white;
+  border-top: 1px rgb(209, 85, 3) solid;
+  padding: 10px;
 }
