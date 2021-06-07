@@ -6,7 +6,7 @@ let db = new Localbase('db')
 
 export function getUser(req) {
   let userData;
-  db.collection('users').doc({ id : req }).get().then(user => {
+  db.collection('users').doc({ name : req }).get().then(user => {
     userData = user;
   });
   console.log(user);
@@ -24,13 +24,13 @@ export function getLastSeven(userName) {
 }
 
 export function addUser(req) {
-  db.collection('users').add(req).then(user => {
+  db.collection('users').add({id : uuidv1(), name : req}).then(user => {
     console.log(`user created\n ${user}`);
   }).catch(err => console.log(err));
 }
 
 export function addExercise(req) {
-  db.collection('exercise').add({date : moment('D M YY'), ...req}).then(item => {
+  db.collection('exercise').add({id : uuidv1(), date : moment('D M YY'), ...req}).then(item => {
     console.log(`exercise added\n ${item}`);
   }).catch(err => console.log(err));
 }
