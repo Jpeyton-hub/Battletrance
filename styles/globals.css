@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav {
+  background-color: rgb(47, 48, 61);
+  color: white;
+  border-bottom: 1px yellow solid;
+}
+
+main {
+}
